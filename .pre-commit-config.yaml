@@ -13,6 +13,12 @@ repos:
             "--rcfile=.pylintrc", # Link to your config file
             "--load-plugins=pylint.extensions.docparams", # Load an extension
           ]
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        stages:
+          - commit
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
