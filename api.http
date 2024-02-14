@@ -1,0 +1,11 @@
+@base_url = "http://localhost:3000"
+
+###
+# @name create_tag
+POST {{base_url}}/products/tags HTTP/1.1
+Content-Type: application/json
+
+
+{
+  "product_code": "123-456-789"
+}
