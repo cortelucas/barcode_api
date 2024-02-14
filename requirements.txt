@@ -8,6 +8,7 @@ isort==5.13.2
 mccabe==0.7.0
 nodeenv==1.8.0
 platformdirs==4.2.0
+pre-commit==3.6.1
 pylint==3.0.3
 PyYAML==6.0.1
 tomlkit==0.12.3
