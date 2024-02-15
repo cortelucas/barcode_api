@@ -2,11 +2,13 @@
 disable=
       C0116, # missing-function-docstring
       E0015, # unrecognized-option
+      E0401, # import-outside-toplevel
       C0114, # missing-module-docstring
       W0703, # Catching too general exception Exception
       C0209, # Consider-using-f-string
       C0321, # Multiple-statements
       W0221, # Arguments-differ
+      W0012, # use-implicit-booleaness-not-comparison-to-string
       R0801, # Duplicate-code
       C0115, # missing-class-docstring
       R0903, # too-few-public-methods

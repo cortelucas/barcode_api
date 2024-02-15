@@ -1,4 +1,5 @@
 from src.views.http_types import HttpRequest, HttpResponse
+from src.controllers.tag_creator_controller import TagCreatorController
 
 
 class TagCreatorView:
@@ -7,11 +8,11 @@ class TagCreatorView:
     """
 
     def validate_and_create(self, http_request: HttpRequest) -> HttpResponse:
-        # body = http_request.body
-        # product_code = body["product_code"]
+        tag_creator_controller = TagCreatorController()
 
-        # lógica de regra de negócio
-        print("Estou na view")
-        print(http_request)
+        body = http_request.body
+        product_code = body["product_code"]
 
-        return HttpResponse(200, {"message": "Tag created"})
+        formatted_response = tag_creator_controller.create(product_code)
+
+        return HttpResponse(status_code=200, body=formatted_response)
