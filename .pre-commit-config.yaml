@@ -32,13 +32,13 @@ repos:
         language: system
         pass_filenames: false
         stages: [commit]
-  # - repo: local
-  #   hooks:
-  #     - id: pytest
-  #       name: pytest
-  #       language: system
-  #       entry: pytest -s -v
-  #       always_run: true
-  #       pass_filenames: false
-  #       stages:
-  #         - commit
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        language: system
+        entry: pytest -s -v
+        always_run: true
+        pass_filenames: false
+        stages:
+          - commit
